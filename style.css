@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  background-color: black;
+  overflow-x: hidden;
+  max-width: 800px;
+  margin: auto;
+  animation: bgcolor 10s infinite;
+}
+
+@keyframes bgcolor {
+  0%{
+    background-color:black;
+  }
+  10%{
+    background-color: white;
+  }
+  20%{
+    background-color: orange;
+  }
+  30%{
+    background-color: blue;
+  }
+  40%{
+    background-color: green;
+  }
+  50%{
+    background-color: black;
+  }
+  60%{
+    background-color: white;
+  }
+  70%{
+    background-color: orange;
+  }
+  80%{
+    background-color: blue;
+  }
+  90%{
+    background-color: green;
+  }
+  100%{
+    background-color: black;
+  }
+}
+
+.circle {
+  border-bottom: 1rem solid orange;
+  border-top: 1rem solid white;
+  border-left: 1rem solid blue;
+  border-right: 1rem solid green;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 3rem;
+  box-sizing: border-box;
+  animation: circle 10s infinite;
+  position: relative;
+  box-shadow: 1px 1px 20px black;
+}
+
+.circle:nth-child(2) {
+  margin-left: 80%;
+}
+
+.circle:nth-child(4) {
+  margin-left: 80%;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(1440deg);
+  }
+}
+
+#circle {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 3rem;
+  box-sizing: border-box;
+  border: 1rem solid white;
+  animation: letmove 10s infinite;
+  position: relative;
+  box-shadow: 1px 1px 20px black;
+  filter: blur(20px);
+}
+
+@keyframes letmove {
+  0% {
+    top: 0px;
+    left: 0px;
+    border-color: white;
+    background-color: white;
+  }
+  10% {
+    top: -125px;
+    left: 80%;
+    border-color: orange;
+    background-color: orange;
+  }
+  20% {
+    top: -250px;
+    left: 0%;
+    border-color: blue;
+    background-color: blue;
+  }
+  30% {
+    top: -375px;
+    left: 80%;
+    border-color: green;
+    background-color: green;
+  }
+  40% {
+    top: -500px;
+    left: 0%;
+    border-color: white;
+    background-color: white;
+  }
+  50% {
+    top: -500px;
+    left: 0%;
+    border-color: orange;
+    background-color: orange;
+  }
+  60% {
+    top: -375px;
+    left: 80%;
+    border-color: blue;
+    background-color: blue;
+  }
+  70% {
+    top: -250px;
+    left: 0%;
+    border-color: green;
+    background-color: green;
+  }
+  80% {
+    top: -125px;
+    left: 80%;
+    border-color: white;
+    background-color: white;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+    border-color: transparent;
+    background-color: transparent;
+  }
+}
